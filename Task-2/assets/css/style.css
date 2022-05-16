@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.operations{
+    display: flex;
+}
+
+.operations .op{
+    margin-right: 10px;
+}
+
+.operations button{
+    padding: 10px;
+    cursor:pointer;
+}

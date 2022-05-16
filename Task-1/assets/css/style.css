@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item{
+    position:absolute;
+    visibility: hidden;
+}
+
+.visibility{
+    visibility: visible !important;
+}
