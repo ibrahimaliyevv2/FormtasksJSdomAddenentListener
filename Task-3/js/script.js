@@ -38,9 +38,21 @@ window.addEventListener('keydown',function(e){
 
     
 
-    // else if(e.keyCode==13){
-    //     console.log("hi");
-    // }
+    window.addEventListener("keydown" , function(e){
+        if(e.key=="Enter"){
+            var leftMini =circle.style.left.slice(0,circle.style.left.length-2)
+            let topMini = circle.style.top.slice(0,circle.style.top.length-2)
+            const newDiv= document.createElement("div");
+            var container= document.querySelector(".container");
+            newDiv.classList.add("small-circle");
+            newDiv.style.left=Number(leftMini) + 50 + "px";
+            newDiv.style.top=Number(topMini) + 50 +"px";
+            circle.style.width=circle.style.width.slice(0,circle.style.width.length-2)-15 + "px";
+            circle.style.height=circle.style.height.slice(0,circle.style.height.length-2)-15 + "px";
+            console.log(circle.style.width)
+            mainbox.append(newDiv)
+        }
+    })
 
 
 })
